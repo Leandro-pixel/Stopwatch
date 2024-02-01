@@ -1,0 +1,57 @@
+.Timer-container {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 50vh;
+    width: 400px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Timer-Display {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+    font-size: 48px;
+    background-color: #fff;
+}
+
+.Timer-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.Timer-controls button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.Timer-controls button:hover {
+    background-color: #0046d5;
+}
+
+.Timer-Laps {
+    width: 100%;
+}
+
+.Timer-Laps ul {
+    list-style-type:none;
+    display: block;
+    flex-wrap: wrap; /*para poder pular linhas ecedentes*/ 
+}
+
+.Timer-Laps li {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+}
+
+.Timer-Laps li:nth-child(odd) { /*aqui pega só os filhos impares*/
+    background-color: #ddd;
+}
